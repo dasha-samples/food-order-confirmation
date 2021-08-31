@@ -1,0 +1,451 @@
+{
+  "version": "v2",
+  "intents": {
+    "yes": {
+      "includes": [
+        "yes",
+        "correct",
+        "sure",
+        "absolutely",
+        "yes siree bob",
+        "right",
+        "yep",
+        "you got it",
+        "I would",
+        "yeah",
+        "I would",
+        "I'd like that",
+        "I wouldn't mind",
+        "I would not mind",
+        "sure thing",
+        "yeah",
+        "yea",
+        "certainly",
+        "absolutely",
+        "totally",
+        "mhm"
+      ],
+      "excludes": [
+        "fuck off"
+      ]
+    },
+    "no": {
+      "includes": [
+        "no",
+        "definitely not",
+        "wrong",
+        "incorrect",
+        "I do not",
+        "I don't",
+        "I would not",
+        "I wouldn't",
+        "nope",
+        "no, I'm okay",
+        "not right now",
+        "not this time",
+        "nah",
+        "not this moment",
+        "not now"
+      ],
+      "excludes": [
+        "yes"
+      ]
+    },
+    "order_sth_else": {
+      "includes": [
+        "I'd like to change my order",
+        "change order",
+        "order something else",
+        "order more",
+        "order some more",
+        "order something different"
+      ]
+    },
+    "burgers_available": {
+      "includes": [
+        "what burgers do you have",
+        "what kind of burger",
+        "burger kind",
+        "kind of burger",
+        "different burger",
+        "another burger",
+        "other burger",
+        "burgers",
+        "kind of burgers",
+        "other burgers",
+        "try a new burger",
+        "new burger"
+      ]
+    },
+    "I_ordered": {
+      "includes": [
+        "I ordered",
+        "my order",
+        "my burger",
+        "my delivery",
+        "delivery",
+        "order",
+        "ordered",
+        "my burger",
+        "burger order",
+        "burger"
+      ]
+    },
+    "nvm": {
+      "includes": [
+        "never mind",
+        "nvm",
+        "forget it",
+        "changed my mind",
+        "it's nothing",
+        "had a change of heart",
+        "change of heart",
+        "don't want this",
+        "don't want it",
+        "don't need it"
+      ]
+    },
+    "appetizers": {
+      "includes": [
+        "appetizers wise",
+        "the appetizers",
+        "appetizers",
+        "what kind of appetizers do you guys have",
+        "appetizers on the menu"
+      ]
+    },
+    "drinks": {
+      "includes": [
+        "what drinks do you have?",
+        "what sodas do you have on tap?",
+        "can I get a drink?",
+        "what about drinks",
+        "what about the drinks",
+        "some drinks",
+        "something to drink",
+        "drink?",
+        "what kind of drinks do you have",
+        "you have any drinks",
+        "what are your drinks options",
+        "drinks options",
+        "beverages",
+        "drinks",
+        "how about drinks",
+        "drinks wise"
+      ]
+    },
+    "change_street": {
+      "includes": [
+        "different street",
+        "street is different",
+        "street I live on is different",
+        "other street",
+        "change street",
+        "change the street",
+        "change my street",
+        "name of the street",
+        "name of street",
+        "street name"
+      ]
+    },
+    "different_address": {
+      "includes": [
+        "change the address",
+        "address",
+        "different address",
+        "fix the address",
+        "other address",
+        "change address",
+        "can i change the delivery address",
+        "delivery address",
+        "address of the delivery"
+      ]
+    },
+    "change_house_num": {
+      "includes": [
+        "different house",
+        "house number is different",
+        "the number of the house I live on is different",
+        "other house number",
+        "other house",
+        "change house number",
+        "change the house number",
+        "change my house number"
+      ]
+    },
+    "card": {
+      "includes": [
+        "pay by card",
+        "credit card",
+        "debit card",
+        "my card",
+        "card"
+      ]
+    },
+    "cancel_order": {
+      "includes": [
+        "I don't want the",
+        "I don't want the burger anymore",
+        "cancel order",
+        "cancel my order",
+        "cancel the order",
+        "don't want to order"
+      ]
+    },
+    "cannot_help": {
+      "includes": [
+        "that's it",
+        "don't need",
+        "that would be it",
+        "that is it",
+        "I'm okay",
+        "it's okay",
+        "all good"
+      ]
+    },
+    "cash": {
+      "includes": [
+        "dough",
+        "paper money",
+        "coins",
+        "paper"
+      ]
+    }
+  },
+  "entities": {
+    "street": {
+      "open_set": true,
+      "values": [
+        {
+          "value": "Washington Avenue",
+          "synonyms": [
+            "Washington Ave"
+          ]
+        },
+        {
+          "value": "Baum Boulevard",
+          "synonyms": [
+            "Baum Blvd"
+          ]
+        },
+        {
+          "value": "Grant Street"
+        },
+        {
+          "value": "Parkway North"
+        },
+        {
+          "value": "Penn Avenue",
+          "synonyms": [
+            "Penn ave"
+          ]
+        }
+      ],
+      "includes": [
+        "I live on (Penn avenue)[street]"
+      ]
+    },
+    "burger_kind": {
+      "open_set": false,
+      "values": [
+        {
+          "value": "beef burger",
+          "synonyms": [
+            "beef",
+            "meat",
+            "meat burger"
+          ]
+        },
+        {
+          "value": "creamy mushroom",
+          "synonyms": [
+            "creamy mushroom burger",
+            "mushroom",
+            "creamy"
+          ]
+        },
+        {
+          "value": "cheeseburger",
+          "synonyms": [
+            "cheese burger",
+            "cheese"
+          ]
+        },
+        {
+          "value": "buffalo chicken",
+          "synonyms": [
+            "buffalo",
+            "buffalo chicken burger",
+            "chicken",
+            "buffalo burger",
+            "chicken burger",
+            "chicken buffalo"
+          ]
+        },
+        {
+          "value": "hawaiian burger",
+          "synonyms": [
+            "hawaiian",
+            "hawaii"
+          ]
+        },
+        {
+          "value": "barbeque burger",
+          "synonyms": [
+            "barbeque",
+            "BBQ",
+            "BBQ burger",
+            "bbq"
+          ]
+        }
+      ],
+      "includes": [
+        "I want the order the (BBQ)[burger_kind]",
+        "I wanna get a (hawaiian)[burger_kind] and (beef)[burger_kind] burgers",
+        "I wanna order (chicken buffalo)[burger_kind]",
+        "let's go with a (beef burger)[burger_kind]",
+        "(creamy mushroom)[burger_kind]"
+      ]
+    },
+    "house_num": {
+      "open_set": true,
+      "values": [
+        {
+          "value": "762",
+          "synonyms": [
+            "seven six two",
+            "seven hundred sixty two",
+            "seven six two"
+          ]
+        },
+        {
+          "value": "7",
+          "synonyms": [
+            "seven"
+          ]
+        },
+        {
+          "value": "317",
+          "synonyms": [
+            "three hundred seventeen",
+            "three seventeen",
+            "three one seven"
+          ]
+        },
+        {
+          "value": "124",
+          "synonyms": [
+            "hundred twenty four",
+            "one twenty four",
+            "one two four"
+          ]
+        },
+        {
+          "value": "52",
+          "synonyms": [
+            "fifty two"
+          ]
+        },
+        {
+          "value": "16",
+          "synonyms": [
+            "sixteen"
+          ]
+        }
+      ],
+      "includes": [
+        "my building number is (seven)[house_num]",
+        "I live on (seventy five)[house_num] (William Penn Highway)[street]",
+        "my address is (one sixty two)[house_num] (Washington Road)[street]",
+        "deliver my order to (twenty seven)[house_num] (West Carson Street)[street]",
+        "deliver it to (six two one)[house_num] (McKnight Road)[street]",
+        "on (five hundred seventy nine)[house_num] (Centre Avenue)[street]",
+        "live on (Penn Avenue)[street] building number (seventy six)[house_num]",
+        "my address is (Centre ave)[street] building (one three six)[house_num]",
+        "my building number is (eighty three)[house_num]",
+        "house number is (two seventy three)[house_num]",
+        "my building number is (97)[house_num]",
+        "house number is (309)[house_num]",
+        "on (399)[house_num] (Centre Avenue)[street]",
+        "live on (Penn Avenue)[street] building number (598)[house_num]",
+        "my address is (Centre ave)[street] building (876)[house_num]"
+      ]
+    },
+    "appetizers": {
+      "open_set": true,
+      "values": [
+        {
+          "value": "fried calamari",
+          "synonyms": [
+            "calamari",
+            "the fried calamari",
+            "the calamari"
+          ]
+        },
+        {
+          "value": "french fries",
+          "synonyms": [
+            "fries",
+            "the french fries",
+            "the fries"
+          ]
+        },
+        {
+          "value": "spring salad",
+          "synonyms": [
+            "the salad",
+            "a salad",
+            "spring one"
+          ]
+        },
+        {
+          "value": "soup of the day",
+          "synonyms": [
+            "the soup",
+            "soup",
+            "whatever soup",
+            "a soup"
+          ]
+        }
+      ],
+      "includes": [
+        "I'll order the (soup of the day)[appetizers]",
+        "I'll have some (french fries)[appetizers]",
+        "I'll order a (spring salad)[appetizers]",
+        "I'll take (french fries)[appetizers]",
+        "I'll take the (soup)[appetizers]",
+        "I'll take the (calamari)[appetizers]",
+        "I'll take the (fried calamari)[appetizers]"
+      ]
+    },
+    "drinks": {
+      "open_set": false,
+      "values": [
+        {
+          "value": "orange juice",
+          "synonyms": [
+            "OJ",
+            "juice",
+            "orange drink"
+          ]
+        },
+        {
+          "value": "vanilla milkshake",
+          "synonyms": [
+            "milkshake",
+            "vanilla drink",
+            "vanilla one"
+          ]
+        },
+        {
+          "value": "Sprite",
+          "synonyms": [
+            "soda",
+            "sprite",
+            "sprite please"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "default": {
+    "voiceInfo": {
+      "lang": "en-US",
+      "speaker": "default",
+      "speed": 0.3,
+      "variation": 40
+    },
+    "phrases": {
+      "i_will_call_back": [
+        {
+          "text": "Okay, I'll call you later. Bye!",
+          "voiceInfo": { "speed": 0.3, "variation": 5 }
+        }
+      ],
+      "hello": {
+        "random": [
+          [{ "text": "Hello" }],
+          [{ "text": "Umm, hello?" }],
+          [{ "text": "Are you there?" }]
+        ]
+      },
+
+
+
+
+      "education": 
+      {
+        "first": 
+        [{ "text": "Alright, so, shall we start? Could you first tell me what is the highest level of education you have obtained to date?" }],
+        "repeat": 
+            [{ "text": "I was saying could you tell me what is the highest level of education you have obtained to date?" }]
+      },
+
+      "experience_years": 
+      {
+        "first": 
+        [{ "text": "Wonderful! Now, could you tell me how many years of experience you have?" }],
+        "repeat": 
+            [{ "text": "I was saying how many years of experience do you have?" }]
+      },
+
+      "2_years": 
+      {
+        "first": 
+        [{ "text": "Uh-huh, got that. Just to clarify, do you have at least 2 years of experience with cold calls?" }],
+        "repeat": 
+            [{ "text": "I was asking if you have 2 years at least of experience in cold calling." }]
+      },
+
+      "rate_skill": 
+      {
+        "first": 
+        [{ "text": "Perfect! What I'd like to know now is how would you rate your cold calling skills?" }],
+        "repeat": 
+            [{ "text": "I was saying. On a scale of 1 to 5, how would you rate your overall experience?" }]
+      },
+
+      "meetings": 
+      {
+        "first": 
+        [{ "text": "Alright... okay. As you know, this position entails meeting with potential clients and at times spending a long time on the road. How comfortable are you with that?" }],
+        "repeat": 
+            [{ "text": "I was saying that this position entails at times spending a long time on the road to meet with potential clients. I want to know how comfortable you are with that." }]
+      },
+
+      "travel": 
+      {
+        "first": 
+        [{ "text": "Fantastic! I'm glad to hear that! Would it be right for me to assume you're okay with frequent business trips?" }],
+        "repeat": 
+            [{ "text": "I was asking if I'd be right thinking you are okay with frequent business trips?" }]
+      },
+
+      "selling_type": 
+      {
+        "first": 
+        [{ "text": "Wonderful! Just a couple more questions... Do you personally prefer cold calls or offline meetings with potential clients?" }],
+        "repeat": 
+            [{ "text": "I was just asking if you prefer cold calls or offline meetings with the clients?"}]
+      },
+      
+      "sales_goals": 
+      {
+        "first": 
+        [{ "text": "Uh-huh, I got that. Now would you say you have consistently met your sales goals?" }],
+        "repeat": 
+            [{ "text": "I was asking if you'd say you've consistently met your sales goals?"}]
+      },
+
+      "compensation_level": 
+      {
+        "first": 
+        [{ "text": "The pay range for this position falls between thirty thousand and forty five thousand dollars. Does this range match what you are looking for in terms of compensation?" }],
+        "repeat": 
+            [{ "text": "What level of compensation are you looking for?"}]
+      },
+
+      "schedule": 
+      {
+        "first": 
+        [{ "text": "Okay, great. I have to say that this position will require you to sometimes work extra hours. Is this a deal breaker for you?" }],
+        "repeat": 
+            [{ "text": "I was saying that in this position you'd sometimes have to work extra hours. Is this a deal breaker or is it not so important for you?"}]
+      },
+      
+      "end_interview": 
+      {
+        "first": 
+        [{ "text": "Wonderful! Um. This concludes our call, I will relay your replies to the hiring manager. Looking forward to seeing you at the interview! Have a fantastic rest of the day!" }],
+        "repeat": 
+            [{ "text": "Thank you your replies, I'll relay them to the hiring manager and we'll see you at the interview. Have a great rest of the day!"}]
+      },
+      
+      "interview_day": 
+      {
+        "first": 
+        [{ "text": "Thank you very much for your replies. At this point I would like to invite you to an in-person interview. What day would work best for you?" }],
+        "repeat": 
+            [{ "text": "I was saying I would like to invite you to an in-person interview. What day would work best for you?"}]
+      },
+
+      "interview_time": 
+      {
+        "first": 
+        [{ "text": "Uh-huh, fantastic. And what hour works best for you?" }],
+        "repeat": 
+            [{ "text": "What time would work best for you?"}]
+      },
+
+      "nvm_its_ok": 
+      {
+        "random": [
+          [{ "text": "That's fine. Is there anything else I can help you with?" }],
+          [{ "text": "All good. Would you like any other help with anything?" }],
+          [{ "text": "That's totally fine, is there something else I can assist you with?" }]
+        ]
+      },
+
+
+      "any_other_help":
+      {
+        "random":[
+          [{"text": "May I help with anything else?"}],
+          [{ "text": "Would you like any other help with anything?" }],
+          [{ "text": "Is there something else I can assist you with?" }],
+          [{ "text": "Do you have any other questions?" }],
+          [{ "text": "Anything else I can help you with?" }]
+        ]
+      },
+
+      "when_callback": [{ "text": "When can I call you back?" }],
+      "i_said": [{ "text": "I was saying" }],
+      "sorry_wont_call": [
+        { "text": "Sorry if I bothered you, have a nice day! Bye!" }
+      ],
+      "i_will_wait": {
+        "random": [
+          [{ "text": "Okay, I'll wait" }],
+          [{ "text": "Sure, I'll wait" }],
+          [{ "text": "Okay, no problem!" }]
+        ]
+      },
+      "i_can_hear_you": [{ "text": "Yes, I hear you" }],
+      "dont_understand": {
+        "random": [
+          [{ "text": "Sorry, could you say it again?" }],
+          [
+            {
+              "text": "Sorry, the connection dropped for a second. Could you say that again?"
+            }
+          ],
+          [{ "text": "Sorry, I didn't quite catch that." }],
+          [{ "text": "Could you say it one more time?" }]
+        ]
+      },
+      "dont_understand_hangup": [
+        {
+          "text": "I'm sorry I can barely hear you. Let's restart."
+        }
+      ],
+      "dont_understand_forward": [
+        {
+          "text": "I'm sorry, let me transfer you to another agent. Please stand by!",
+          "voiceInfo": { "speed": 0.3, "variation": 40 }
+        }
+      ],
+      "mhm": [{ "text": "Mgm..." }],
+      "yes_i_am_a_robot": [
+        {
+          "text": "Yes, I am a robot! Please do not tell anybody about this or I get fired"
+        }
+      ],
+      "is_that_all": [{ "text": "Is that all?" }],
+      "intro": [{ "text": "Ford assistant ready." }],
+      "bye": [{ "text": "Bye!" }],
+      "whatTarget": [
+        { "type": "dynamic", "id": "action" },
+        { "text": " what?" }
+      ],
+      "whatAction": [
+        { "text": "What should i do with " },
+        { "type": "dynamic", "id": "target" },
+        { "text": "?" }
+      ],
+      "asYouWish": [{ "text": "As you wish" }]
+    },
+    "types": {},
+    "macros": {
+      "hello": {},
+      "mhm": {},
+      "i_will_call_back": {},
+      "i_can_hear_you": {},
+      "dont_understand_hangup": {},
+      "dont_understand": {},
+      "dont_understand_forward": {},
+      "yes_i_am_a_robot": {},
+      "i_said": {},
+      "i_will_wait": {},
+      "sorry_wont_call": {},
+      "intro": {},
+      "bye": {},
+      "whatAction": {},
+      "whatTarget": {},
+      "asYouWish": {}
+    }
+  }
+}

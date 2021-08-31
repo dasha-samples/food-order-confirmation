@@ -1,0 +1,13 @@
+{
+  "name": "appointment",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.0"
+  },
+  "dependencies": {
+    "@dasha.ai/sdk": "^0.4.2"
+  }
+}
